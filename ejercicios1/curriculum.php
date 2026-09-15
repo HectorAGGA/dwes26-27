@@ -20,7 +20,7 @@ $idioma = "va";
 $idiomas = "idiomas_" . $idioma;
 
 echo $$estudios;
-echo <br>;
+echo "<br>";
 echo $$idiomas;
 
 ?>
