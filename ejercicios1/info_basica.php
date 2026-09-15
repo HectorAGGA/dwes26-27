@@ -9,10 +9,10 @@
 
     <?php 
     $nombre = "Héctor Aguilera";
-    $anyo = 2026;
+    $anyo = 2007;
     
     ?>
-    <p>El autor de esta página es <?php print $nombre; ?> y está realizada en
+    <p>Me llamo <?php print $nombre; ?> y nací 
     el año <?php print $anyo; ?>.</p>
 
 </body>
