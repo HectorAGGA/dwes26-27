@@ -13,9 +13,9 @@ $nota1 = 2;
 $nota2 = 3.7;
 
 if ($nota1> $nota2) {
-    echo "<p>La nota 1 es mayor que la nota 2</p>"
+    echo "<p>La nota 1 es mayor que la nota 2</p>";
 } else {
-    echo"<p>La nota 2 es mayot</p>"
+    echo"<p>La nota 2 es mayor</p>";
 }
 
 ?>
