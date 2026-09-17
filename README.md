@@ -14,7 +14,7 @@
 ### EJERCICIO 4 (if_else)
 ![if_else](img/image-3.png)
 
-#####EJERCICIO 5 (if_else_if)
+### EJERCICIO 5 (if_else_if)
 ![if_else_if](img/image-4.png)
 
 ### EJERCICIO 6 (contador 1)
