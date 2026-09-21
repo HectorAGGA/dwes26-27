@@ -3,11 +3,11 @@ header{
     align-items: center;
     justify-content: center;
     display: flex;
-    background-color: rgb(229, 252, 145);
+    background-color: wheat;
     border-bottom: 1px black solid ;
 }
 body{
-    background-color: rgb(241, 210, 255);
+    background-color: aquamarine;
 }
 
 .enunciado{
@@ -15,7 +15,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgb(236, 164, 164);
+    background-color: burlywood;
 
 
 }
