@@ -1,0 +1,25 @@
+header{
+
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background-color: wheat;
+    border-bottom: 1px black solid ;
+}
+body{
+    background-color: aquamarine;
+}
+
+.enunciado{
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: burlywood;
+
+
+}
+.enunciado p {
+    border: 1px solid black;
+
+}
