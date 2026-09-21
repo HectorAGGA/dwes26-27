@@ -7,6 +7,14 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+<header><h1>CURRICULUM</h1></header>
+    <div class="enunciado">
+        <p>Crea una página en la carpeta de ejercicios llamada curriculum.php donde, utilizando
+variables variables, muestres parte de tu currículum (por ejemplo, un párrafo con tus
+estudios y otro con los idiomas que hablas), tanto en español,valencià como en otro
+idioma que elijas.</p>
+    </div> 
+
 <?php
 $estudios_va = "Tinc d'estudis l'ESO, el SMR i estic estudiant el DAW";
 $estudios_en = "My education includes ESO (compulsory secondary education) and SMR, and I'm currently studying DAW";

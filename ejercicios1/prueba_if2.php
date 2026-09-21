@@ -7,7 +7,13 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    
+<header><h1>PRUEBA IF 2 (Nota mayor entre 3)</h1></header>
+    <div class="enunciado">
+        <p>CModifica el ejercicio anterior añadiendo una tercera nota $nota3 , y determinando cuál
+de las 3 notas es ahora la mayor. Para ello, deberás ayudarte esta vez de la estructura
+if..elseif..else.</p>
+    </div>    
+
 <?php 
 $nota1 = 2;
 

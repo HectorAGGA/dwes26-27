@@ -15,7 +15,13 @@ $resultado = PI*($radio*$radio);
 
 ?>
     <header><h1>CALCULO DE UN AREA DE UN CIRCULO</h1></header>
-    
+    <div class="enunciado">
+        <p>Crea una página en la carpeta de ejercicios llamada area_circulo.php. En
+ella, crea una variable $radio y ponle el valor 3.5. Según esa variable, calcula en otra
+variable el área del círculo (PI * r<sup>2</sup>
+), deberás definir la constante PI, y muestra por
+pantalla el texto “El área del círculo es XX.XX”, donde XX.XX será el resultado de calcular el área.</p>
+    </div>
     <div id="datos">
         <h3>DATOS DE LOS QUE DISPONEMOS:</h3>
         <ul>
