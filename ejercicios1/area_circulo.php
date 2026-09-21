@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>area cirulo</title>
-    <link rel="stylesheet" href="css/area_circulo.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 <?php 
@@ -15,7 +15,7 @@ $resultado = PI*($radio*$radio);
 
 ?>
     <header><h1>CALCULO DE UN AREA DE UN CIRCULO</h1></header>
-
+    
     <div id="datos">
         <h3>DATOS DE LOS QUE DISPONEMOS:</h3>
         <ul>
