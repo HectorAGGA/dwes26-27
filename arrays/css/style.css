@@ -23,3 +23,13 @@ body{
     border: 1px solid black;
 
 }
+td.maximo{
+    background-color: blue;
+}
+td.minimo{
+    background-color: green;
+}
+td{
+    background-color: black;
+    color: white;
+}

@@ -15,7 +15,7 @@
 ninguno. Muestra a continuación por pantalla el contenido del array de tal forma que:
 • La columna del máximo debe aparecer en azul.
 • La fila del mínimo debe aparecer en verde.
-• El resto de números deben aparecer en negro./p>
+• El resto de números deben aparecer en negro.</p>
     </div>
 
 <?php 
@@ -28,8 +28,23 @@ for ($i=0; $i <6 ; $i++) {
         $numeros[$i][$j]= rand(100,999);
     }
 }
- $maximo = max(max($numeros));
- $minimo = min(min($numeros));
+$maximo = max(array_merge(...$numeros));
+$minimo = min(array_merge(...$numeros));
+$colmax = 0;
+$filmin = 0;
+
+ for ($i=0; $i < count($numeros) ; $i++) { 
+    for ($j=0; $j < count($numeros[$i]); $j++) { 
+            if ($numeros[$i][$j] == $maximo) {
+                $colmax = $j;
+            }
+            if ($numeros[$i][$j] == $minimo) {
+                $filmin = $i;
+            }
+
+
+    }
+ }
 
 ?>
 
@@ -38,15 +53,15 @@ for ($i=0; $i <6 ; $i++) {
         <?php for ($i = 0; $i < count($numeros); $i++): ?>
             <tr>
                 <?php for ($j = 0; $j < count($numeros[$i]); $j++): 
-                    if ($numeros[$i][$j] == $maximo) {
+                    if ($j == $colmax) {
+                        echo "<td class=\"maximo\">" . $numeros[$i][$j] . "</td>";
+                    } else if ($i == $filmin){
+                        echo "<td class= \"minimo\">" . $numeros[$i][$j] . "</td>";
+                    }  else {
                         echo "<td>" . $numeros[$i][$j] . "</td>";
-                    } else {
-                        echo "<td>" . $numeros[$i][$j] . "</td>";
-                    }
-                    ?>
+                    }                     
                     
-                    
-                <?php endfor; ?>
+                endfor; ?>
             </tr>
         <?php endfor; ?>
     </tbody>
