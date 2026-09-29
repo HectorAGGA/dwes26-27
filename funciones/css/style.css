@@ -3,11 +3,11 @@ header{
     align-items: center;
     justify-content: center;
     display: flex;
-    background-color: wheat;
+    background-color: lightcoral;
     border-bottom: 1px black solid ;
 }
 body{
-    background-color: aquamarine;
+    background-color: lightyellow;
 }
 
 .enunciado{
@@ -15,11 +15,15 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: burlywood;
+    background-color: rgb(174, 227, 243);
 
 
 }
 .enunciado p {
     border: 1px solid black;
 
+}
+td{
+    background-color: black;
+    color: white;
 }
