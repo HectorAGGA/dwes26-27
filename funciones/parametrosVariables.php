@@ -34,8 +34,8 @@ function mayor(): int
 
     return $mayor;
 } 
-$resultado = mayor(1,2,-4,167);
-echo "El numero mayor es " . $resultado;
+
+echo "El numero mayor es " . mayor();
 ?>
 
 </body>
