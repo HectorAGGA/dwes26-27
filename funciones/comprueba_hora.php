@@ -17,15 +17,31 @@ porque 63 no es un minuto válido.</p>
 
 <?php
 
-$hora = "12:20:00";
+$hora = "21:20:10";
 
 
 
 function comprobarHora(string $hora)
 {
 $aux = explode(":",$hora);
+if (count($aux)!= 3) {
+    echo "formato de fecha incorrecto";
+    return;
+}
 
-
+if ($aux[0]<0 or $aux[0]>24) {
+    echo "campo hora incorrecto";
+    return;
+}
+if ($aux[1]<0 or $aux[1]>60) {
+    echo "campo minutos incorrecto";
+    return;
+}
+if ($aux[2]<0 or $aux[2]>60) {
+    echo "campo segundos incorrecto";
+    return;
+}
+echo $hora;
 }
 
 comprobarHora($hora);
