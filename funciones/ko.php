@@ -33,7 +33,7 @@ if ($error == "usuario") {
             <br>
             <div>
                 <label for="contra">Contraseña: </label><br>
-                <input type="text" id="contra" name="contra" required>
+                <input type="password" id="contra" name="contra" required>
             </div>
             <br>
             <button type="submit">Enviar</button>
