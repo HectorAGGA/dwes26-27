@@ -29,21 +29,15 @@ Nota: no se puede usar str_word_count</p>
         }
     }
     $total = strlen($frase)-$cont ;
-    echo "La cantidad de letras totales es: " . $total;
-/*
+    echo "La cantidad de letras totales es: " . $total . "<br>";
+
     $frase = explode(" ", $frase);
-    $aux = "";
     
 
     for ($i=0; $i < count($frase); $i++) { 
-        
+        echo $frase[$i] . " La longitud de la palabra es: ".strlen($frase[$i]). "<br>";
        
     }
-
-    
-    echo trim($aux);
-    
-    */
     ?>
 
 
