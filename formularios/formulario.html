@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+</head>
+<body class="bg-light">
+    <div class="enunciado">
+        <p>Crea un formulario(utiliza bootstrap) que solicite:
+            • Nombre y apellidos.
+            • Email.
+            • URL página personal.
+            • Sexo (radio).
+            • Número de convivientes en el domicilio.
+            • Aficiones (checkboxes) => poner mínimo 4 valores.
+            • Menú favorito (lista selección múltiple) => poner mínimo 4 valores.
+            • Muestra los valores cargados en una tabla-resumen.</p>
+    </div> 
+    <div class="container mt-5 mb-5">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="card shadow-sm">
+                    <div class="card-header bg-primary text-white">
+                        <h3 class="card-title mb-0">Formulario de Registro - Ejercicio</h3>
+                    </div>
+                    <div class="card-body">
+                        <form action="formulario.php" method="post">
+                            
+                            <!-- Nombre y apellidos -->
+                            <div class="mb-3">
+                                <label for="nombre" class="form-label">Nombre y apellidos:</label>
+                                <input type="text" class="form-control" id="nombre" name="nombre" required>
+                            </div>
+
+                            <!-- Email -->
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email:</label>
+                                <input type="email" class="form-control" id="email" name="email" required>
+                            </div>
+
+                            <!-- URL página personal -->
+                            <div class="mb-3">
+                                <label for="url" class="form-label">URL página personal:</label>
+                                <input type="url" class="form-control" id="url" name="url" placeholder="https://tuweb.com">
+                            </div>
+
+                            <!-- Sexo (Radio) -->
+                            <div class="mb-3">
+                                <label class="form-label d-block">Sexo:</label>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="sexo" id="sexoH" value="Hombre" checked>
+                                    <label class="form-check-label" for="sexoH">Hombre</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="sexo" id="sexoM" value="Mujer">
+                                    <label class="form-check-label" for="sexoM">Mujer</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="sexo" id="sexoO" value="Otro">
+                                    <label class="form-check-label" for="sexoO">Otro</label>
+                                </div>
+                            </div>
+
+                            <!-- Número de convivientes en el domicilio -->
+                            <div class="mb-3">
+                                <label for="convivientes" class="form-label">Número de convivientes en el domicilio:</label>
+                                <input type="number" class="form-control" id="convivientes" name="convivientes" min="1" value="1">
+                            </div>
+
+                            <!-- Aficiones (Checkboxes - Mínimo 4 valores) -->
+                            <div class="mb-3">
+                                <label class="form-label d-block">Aficiones (selecciona al menos una):</label>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" name="aficiones[]" id="afic1" value="Deportes">
+                                    <label class="form-check-label" for="afic1">Deportes</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" name="aficiones[]" id="afic2" value="Lectura">
+                                    <label class="form-check-label" for="afic2">Lectura</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" name="aficiones[]" id="afic3" value="Musica">
+                                    <label class="form-check-label" for="afic3">Música</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" name="aficiones[]" id="afic4" value="Viajes">
+                                    <label class="form-check-label" for="afic4">Viajes</label>
+                                </div>
+                            </div>
+
+                            <!-- Menú favorito (Lista selección múltiple - Mínimo 4 valores) -->
+                            <div class="mb-3">
+                                <label for="menu" class="form-label">Menú favorito (puedes seleccionar varios con Ctrl/Cmd):</label>
+                                <select class="form-select" name="menu[]" id="menu" multiple size="4">
+                                    <option value="Paella">Paella</option>
+                                    <option value="Pizza">Pizza</option>
+                                    <option value="Hamburguesa">Hamburguesa</option>
+                                    <option value="Sushi">Sushi</option>
+                                </select>
+                            </div>
+
+                            <!-- Botón de envío -->
+                            <button type="submit" class="btn btn-primary w-100">Enviar formulario</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+
+
+ visualizar la imagen durante 5 segundos,con la ruta y nombre, tamaño de anchura y altura y redirecciona al formulario. 
+
+
+También hay que crear un enlace
+para mostrar el listado de todas las imagenes subidas.(analiza/estudia el método scandir()).
