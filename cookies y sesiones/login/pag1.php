@@ -1,5 +1,5 @@
 <?php 
-require(cabecera.inc);
+require("cabecera.inc");
 
 echo "Hola en pag1";
 
