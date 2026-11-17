@@ -1,0 +1,16 @@
+div{
+    display: flex;
+    -ms-flex-align: center;
+}
+body {
+    background-color: beige;
+    
+
+}
+#cat{
+    background-color: aqua;
+}
+
+#stock{
+    background-color: azure;
+}
