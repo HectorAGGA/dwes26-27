@@ -23,7 +23,7 @@ switch ($accion) {
 
     case 'borrar' :
         try {
-            $sql = "DELETE FROM test1 WHERE id = :id";
+            $sql = "DELETE FROM test1 WHERE ID = :id";
             $stmt = $pdo->prepare($sql);
             $stmt->execute(['id' => $_REQUEST['ID']]);
             echo "borrada la ID " . $_REQUEST['ID'];
@@ -32,7 +32,11 @@ switch ($accion) {
         }
 
         break;
-        
+    case 'update' :
+        $sql = "UPDATE test1 SET Nombre = :Nombre, texto1 = :texto1 WHERE ID = :id";
+        $stmt = $pdo->prepare($sql);
+        $stmt->execute(['id' => $_REQUEST['ID'], 'Nombre' => $_REQUEST['nombre'], 'texto1' => $_REQUEST['texto1']], );
+        break;
     default:
 
         break;
