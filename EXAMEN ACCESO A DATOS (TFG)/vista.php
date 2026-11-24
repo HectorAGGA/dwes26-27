@@ -1,3 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+<body>
+    
+
 <?php 
 session_start();
 include "CargarBD.php";
@@ -7,10 +19,10 @@ if (!isset($_SESSION['usuario'])) {
     header("Location: login.php");
     exit();
 }
-echo "<a href='cerrar_sesion.php'>CERRAR SESION </a>";
+echo "<a href='cerrar_sesion.php'>CERRAR SESION </a> <br>";
  switch ($_SESSION['usuario']) {
    case 'profesor1':
-        echo "ERES EL :" . $_SESSION['usuario'];
+        echo "ERES EL : " . $_SESSION['usuario'];
         $consulta = $pdo->query("SELECT * FROM notas");
         $consulta->execute();
         echo "<table border='1'>";
@@ -35,7 +47,7 @@ echo "<a href='cerrar_sesion.php'>CERRAR SESION </a>";
         break; 
     
     case 'profesor2':
-        echo "ERES EL :" . $_SESSION['usuario'];
+        echo "ERES EL : " . $_SESSION['usuario'];
         $consulta = $pdo->query("SELECT * FROM notas");
         $consulta->execute();
         echo "<table border='1'>";
@@ -61,7 +73,7 @@ echo "<a href='cerrar_sesion.php'>CERRAR SESION </a>";
         break;
 
     case 'profesor3':
-        echo "ERES EL :" . $_SESSION['usuario'];
+        echo "ERES EL : " . $_SESSION['usuario'];
         $consulta = $pdo->query("SELECT * FROM notas");
         $consulta->execute();
         echo "<table border='1'>";
@@ -88,7 +100,7 @@ echo "<a href='cerrar_sesion.php'>CERRAR SESION </a>";
         break;
 
     case 'profesor4':
-        echo "ERES EL :" . $_SESSION['usuario'];
+        echo "ERES EL : " . $_SESSION['usuario'];
         $consulta = $pdo->query("SELECT * FROM notas");
         $consulta->execute();
         echo "<table border='1'>";
@@ -114,7 +126,7 @@ echo "<a href='cerrar_sesion.php'>CERRAR SESION </a>";
         break;
 
     case 'admin':
-        echo "ERES EL :" . $_SESSION['usuario'];
+        echo "ERES EL : " . $_SESSION['usuario'];
         $consulta = $pdo->query("SELECT * FROM notas");
         $consulta->execute();
         echo "<table border='1'>";
@@ -158,3 +170,5 @@ echo "<a href='cerrar_sesion.php'>CERRAR SESION </a>";
 } 
 
 ?>
+</body>
+</html>
